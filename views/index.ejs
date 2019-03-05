@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhoneBook</title>
+	  <meta charset="utf-8"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="col-lg-4 col-md-4 col-sm-4">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Persoon Name</th>
+        <th>Mobile No.</th>
+      </tr>
+    </thead>
+    <tbody>
+    	<% userDetail.forEach(function(user){ %>
+	     <tr>
+		<td><%= user.personName %></td>
+		<td><%= user.contectNo %></td>
+    	</tr>
+<%});%>
+    </tbody>
+  </table>
+</div>
+</div>	
+
+
+
+</body>
+</html>
