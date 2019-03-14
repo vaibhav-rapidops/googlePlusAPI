@@ -8,7 +8,7 @@ const facebookapiRoute=require('./routes/facebookapi');
 app.set('json spaces', 2);
 app.get('/',(req,res)=>{
   
-  const str="hello";
+
   const links={
   	link1:{
   	    description:"To access Google API",
